@@ -22,6 +22,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.pathfinder.DisplayTimezoneActivity"
+            android:label="@string/title_activity_display_timezone" 
+            android:parentActivityName="com.example.myfirstapp.MainActivity" >
+        </activity>
     </application>
 
 </manifest>
