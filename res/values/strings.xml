@@ -9,7 +9,7 @@
     <string name="c">KLMNO</string>
     <string name="d">PQRST</string>
     <string name="e">UVWXYZ</string>
-    
+    <string name="f">12345</string>
     <string name="title_activity_main">MainActivity</string>
     
 

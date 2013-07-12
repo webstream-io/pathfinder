@@ -2,42 +2,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:orientation="vertical">
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="selectTimezone"
-        android:text="@string/get_timezone" />
+        android:text="@string/get_timezone"
+        android:src="@drawable/ic_button" />
 
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="fill_parent"
         android:layout_height="60dp"
-        android:layout_weight="1"
         android:text="@string/a" />
     
+    <View style="@style/Divider" />
+    
     <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_width="fill_parent"
         android:layout_height="60dp"
         android:text="@string/b" />
     
-    <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="60dp"
-        android:text="@string/c" />
+    <View style="@style/Divider" />
     
     <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        
+        android:text="@string/c" />
+    
+    <View style="@style/Divider" />
+    
+    <TextView
+        android:layout_width="fill_parent"
         android:layout_height="60dp"
         android:text="@string/d" />
     
+    <View style="@style/Divider" />
+    
     <TextView
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_width="fill_parent"
         android:layout_height="60dp"
         android:text="@string/e" />
+    
+    <View style="@style/Divider" />
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="@string/f" />
 	
 </LinearLayout>

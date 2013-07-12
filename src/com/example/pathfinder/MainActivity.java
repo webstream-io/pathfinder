@@ -1,10 +1,8 @@
 package com.example.pathfinder;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
 import io.webstream.pathfinder.R;
 
 public class MainActivity extends Activity {
