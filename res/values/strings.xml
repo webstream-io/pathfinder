@@ -3,14 +3,14 @@
 
     <string name="app_name">pathfinder</string>
     <string name="action_settings">Settings</string>
-    <string name="get_timezone">Timezone</string>
+    <string name="get_timezone">TZ</string>
     <string name="a">ABCDE</string>
     <string name="b">FGHIJ</string>
     <string name="c">KLMNO</string>
     <string name="d">PQRST</string>
     <string name="e">UVWXYZ</string>
-    <string name="get_compass">Compass</string>
+    
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_display_timezone">DisplayTimezoneActivity</string>
+    
 
 </resources>

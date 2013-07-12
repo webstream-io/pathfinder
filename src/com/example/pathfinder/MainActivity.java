@@ -1,11 +1,11 @@
 package com.example.pathfinder;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import io.webstream.pathfinder.R;
 
 public class MainActivity extends Activity {
 	public final static String EXTRA_MESSAGE = "com.example.pathfinder.MESSAGE";
@@ -23,13 +23,5 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
-
-	
-    /* Called when the user click the Timezone button */
-    public void selectTimezone(View view) {
-    	Intent intent = new Intent(this, DisplayTimezoneActivity.class);
-    	startActivity(intent);
-    }
-    
+     
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pathfinder"
+    package="io.webstream.pathfinder"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -22,11 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.pathfinder.DisplayTimezoneActivity"
-            android:label="@string/title_activity_display_timezone" 
-            android:parentActivityName="com.example.myfirstapp.MainActivity" >
-        </activity>
-    </application>
+     </application>
 
 </manifest>
