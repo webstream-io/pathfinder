@@ -25,13 +25,16 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int action_settings=0x7f080001;
+        public static final int tz=0x7f080000;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int activity_display_timezone=0x7f030000;
+        public static final int activity_main=0x7f030001;
     }
     public static final class menu {
-        public static final int main=0x7f070000;
+        public static final int display_timezone=0x7f070000;
+        public static final int main=0x7f070001;
     }
     public static final class string {
         public static final int a=0x7f050003;
@@ -43,6 +46,7 @@ public final class R {
         public static final int e=0x7f050007;
         public static final int f=0x7f050008;
         public static final int get_timezone=0x7f050002;
+        public static final int title_activity_display_timezone=0x7f05000a;
         public static final int title_activity_main=0x7f050009;
     }
     public static final class style {
