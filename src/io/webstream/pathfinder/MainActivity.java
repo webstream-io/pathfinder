@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
     }
     
     /* when the user clicks the Timezone button */
-    public void retrieveTimezone(View view) {
+    public void addNewTimeZone(View view) {
     	Intent intent = new Intent(this, DisplayTimezoneActivity.class);
     	startActivity(intent);
     }

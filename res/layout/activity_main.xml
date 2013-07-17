@@ -2,54 +2,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical">
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/get_timezone" 
-        android:onClick="retrieveTimezone" />        
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:text="@string/a" />
-    
-    <View style="@style/Divider" />
-    
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:text="@string/b" />
-    
-    <View style="@style/Divider" />
-    
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="60dp"
+        android:text="@string/get_TimeZone" 
+        android:onClick="addNewTimeZone" />    
         
-        android:text="@string/c" />
-    
-    <View style="@style/Divider" />
-    
-    <TextView
+    <Button
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:text="@string/d" />
+        android:layout_height="wrap_content"
+        android:text="@string/get_Compass" />
     
-    <View style="@style/Divider" />
-    
-    <TextView
+    <Button
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:text="@string/e" />
+        android:layout_height="wrap_content"
+        android:text="@string/get_Barometer" />
     
-    <View style="@style/Divider" />
-    
-    <TextView
+    <Button
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:text="@string/f" />
+        android:layout_height="wrap_content"
+        android:text="@string/get_GPS" />
 	
 </LinearLayout>
