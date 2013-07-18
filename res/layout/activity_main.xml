@@ -10,5 +10,9 @@
         android:text="@string/get_TimeZone" 
         android:onClick="addNewTimeZone" />    
 
-	
+	<TextView
+        android:id="@+id/show_tz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+		
 </LinearLayout>
