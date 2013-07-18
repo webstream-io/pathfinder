@@ -26,6 +26,10 @@
             android:name="io.webstream.pathfinder.DisplayTimezoneActivity"
             android:label="@string/title_activity_display_timezone" >
         </activity>
+        <activity
+            android:name="io.webstream.pathfinder.ShowTimeZoneActivity"
+            android:label="@string/title_activity_show_time_zone" >
+        </activity>
     </application>
 
 </manifest>

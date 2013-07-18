@@ -8,6 +8,8 @@
     <string name="get_Barometer">Barometer</string>
     <string name="get_GPS">GPS</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_activity_display_timezone">Current time</string>
-    
+    <string name="title_activity_display_timezone">Time zone list</string>
+    <string name="title_activity_show_time_zone">Time zone information</string>
+    <string name="hello_world">Hello world!</string>
+
 </resources>

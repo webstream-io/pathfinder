@@ -1,0 +1,77 @@
+commit 8523461d7f8e37f5c0069dbd10f020bcbfe78dee
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Wed Jul 17 16:28:24 2013 +0530
+
+    Displayed all the available time zone IDs in a list
+
+commit 48c7b403125b7d3448fdb460168a5c9fee3ecf12
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Wed Jul 17 11:54:55 2013 +0530
+
+    Added TODO file.
+
+commit 78f5cae4477106fff4e3ea90dc6980b0e2d1f8c1
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Wed Jul 17 11:49:26 2013 +0530
+
+    Added the MIT Licence file.
+
+commit b1837bea38b18c33b7964f1706cf89eabebcd490
+Author: Thongam Deepak <thong.deep@gmail.com>
+Date:   Wed Jul 17 11:42:06 2013 +0530
+
+    Create README.md
+
+commit 5b8be8b7432b039e7ee730af7001ef9196d9139c
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Wed Jul 17 11:39:18 2013 +0530
+
+    Removed all git-ignored files.
+
+commit f48d750551b9257835bdf69883918c9ba024c346
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Wed Jul 17 11:31:10 2013 +0530
+
+    Added .gitignore
+
+commit 212802e14c0e17c5274d321ef18ed496a3987e65
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Tue Jul 16 11:07:41 2013 +0530
+
+    Timezone info for specific ID displaying correctly
+
+commit 00ca688fe8bf6ef25437f62c8a0b9e404e9ef969
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Fri Jul 12 14:34:05 2013 +0530
+
+    Text button changed to icon button
+
+commit 1c3041c203ce5700ede5d115750d4ee65dca7d2b
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Fri Jul 12 10:24:42 2013 +0530
+
+    Changed the application name from  com.example.pathfinder  to  io.webstream.pathfinder
+
+commit 696a89c0d8d1b6e487cfd2d84db55a9bebe1471f
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Thu Jul 11 20:38:01 2013 +0530
+
+    Simple Holo dark UI with a button created
+
+commit 4baa784e1355598ddc76d20055d52d49f9cabb11
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Thu Jul 11 17:50:42 2013 +0530
+
+    Holo dark theme applied
+
+commit af4e241236322b82775d85417d24526a2c8800bf
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Thu Jul 11 16:39:35 2013 +0530
+
+    Simple UI mode with a button
+
+commit 7a7fa87ac66a144524893f5359967811eaac4f9d
+Author: Thongam Deepak Singh <deepak@webstream.io>
+Date:   Wed Jul 10 14:07:50 2013 +0530
+
+    Default Hello World\! up and running

@@ -9,20 +9,11 @@
         android:layout_height="wrap_content"
         android:text="@string/get_TimeZone" 
         android:onClick="addNewTimeZone" />    
-        
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/get_Compass" />
     
-    <Button
-        android:layout_width="fill_parent"
+    <ListView
+    	android:id="@+id/display_time_zone_info"
         android:layout_height="wrap_content"
-        android:text="@string/get_Barometer" />
-    
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/get_GPS" />
+        android:layout_width="match_parent">
+    </ListView>   
 	
 </LinearLayout>
