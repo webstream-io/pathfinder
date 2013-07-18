@@ -12,12 +12,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class DisplayTimezoneActivity extends Activity {
+	public final static String EXTRA_MESSAGE = "io.webstream.pathfinder.MESSAGE";
 	ListView lv;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);	
 		setContentView(R.layout.activity_display_timezone);
-		lv = (ListView) findViewById(R.id.list_current_time);
+		lv = (ListView) findViewById(R.id.list_available_tz);
 		String[] availableID = TimeZone.getAvailableIDs();
 		
 		// Define a new Adapter
@@ -30,13 +31,13 @@ public class DisplayTimezoneActivity extends Activity {
 			//@Override
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id){
 				//int itemPosition = position;
-				String  itemValue  = (String) lv.getItemAtPosition(position);
 				//Calendar current = Calendar.getInstance();
 				//Show Alert 
 				//Toast.makeText(getApplicationContext(), "Position: "+itemPosition+" Time zone: " +TimeZone.getTimeZone(itemValue), Toast.LENGTH_LONG).show();
-				Intent i = new Intent(v.getContext(), ShowTimeZoneActivity.class);
-				i.putExtra("TimeZoneName" ,itemValue);
-				startActivity(i);
+				Intent intent = new Intent(v.getContext(), ShowTimeZoneActivity.class);
+				String  itemValue  = (String) lv.getItemAtPosition(position);
+				intent.putExtra(EXTRA_MESSAGE, itemValue);
+				startActivity(intent);
 			}
 		});
 	}

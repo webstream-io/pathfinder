@@ -9,9 +9,10 @@
     tools:context=".DisplayTimezoneActivity" >
 
 	<ListView
-    	android:id="@+id/list_current_time"
+    	android:id="@+id/list_available_tz"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
     </ListView>
 
+	
 </LinearLayout>
