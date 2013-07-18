@@ -1,6 +1,18 @@
+UI
+==
+
+* Navigational menu button at top-left.
+* Contextual settings menu at top-right. (Compass settings / All Settings / Compass help / All help topics).
+* Button at top-ribbon to keep the screen always on.
+
+Features
+========
+
 * Timezone
 * Compass
 * Barometer
 * GPS
 * Display timezone in notification panel
-* 
+* Custom home screen widgets
+* Custom notification bar widgets
+* Help guides
