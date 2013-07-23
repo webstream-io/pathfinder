@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="9"
         android:targetSdkVersion="17" />
 
     <application
@@ -18,18 +18,20 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity
             android:name="io.webstream.pathfinder.DisplayTimezoneActivity"
             android:label="@string/title_activity_display_timezone" >
         </activity>
+        
         <activity
             android:name="io.webstream.pathfinder.ShowTimeZoneActivity"
             android:label="@string/title_activity_show_time_zone" >
         </activity>
+        
     </application>
 
 </manifest>

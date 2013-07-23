@@ -8,11 +8,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/get_TimeZone" 
-        android:onClick="addNewTimeZone" />    
+        android:onClick="selectTimeZone" />   
 
-	<TextView
-        android:id="@+id/show_tz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 		
 </LinearLayout>

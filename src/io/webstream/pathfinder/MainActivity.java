@@ -21,8 +21,8 @@ public class MainActivity extends Activity {
         return true;
     }
     
-    /* when the user clicks the Timezone button */
-    public void addNewTimeZone(View view) {
+    /* when the user clicks the Time zone button */
+    public void selectTimeZone(View view) {
     	Intent intent = new Intent(this, DisplayTimezoneActivity.class);
     	startActivity(intent);
     }

@@ -11,8 +11,6 @@
 	<ListView
     	android:id="@+id/list_available_tz"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent">
-    </ListView>
-
+        android:layout_width="match_parent" />
 	
 </LinearLayout>

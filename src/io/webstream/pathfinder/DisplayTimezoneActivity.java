@@ -23,17 +23,15 @@ public class DisplayTimezoneActivity extends Activity {
 		
 		// Define a new Adapter
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, availableID);
+		
 		// Assign adapter to ListView
 		lv.setAdapter(adapter);
 		
 		// ListView Item Click Listener
 		lv.setOnItemClickListener(new OnItemClickListener() {
+			
 			//@Override
-			public void onItemClick(AdapterView<?> parent, View v, int position, long id){
-				//int itemPosition = position;
-				//Calendar current = Calendar.getInstance();
-				//Show Alert 
-				//Toast.makeText(getApplicationContext(), "Position: "+itemPosition+" Time zone: " +TimeZone.getTimeZone(itemValue), Toast.LENGTH_LONG).show();
+			public void onItemClick(AdapterView<?> parent, View v, int position, long id){ 				
 				Intent intent = new Intent(v.getContext(), ShowTimeZoneActivity.class);
 				String  itemValue  = (String) lv.getItemAtPosition(position);
 				intent.putExtra(EXTRA_MESSAGE, itemValue);
