@@ -10,9 +10,8 @@
         android:text="@string/get_TimeZone" 
         android:onClick="selectTimeZone" />   
 
-	<TextView
+	<ListView
         android:id="@+id/show_tz"
-        android:textSize="18sp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 	
