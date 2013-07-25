@@ -32,17 +32,20 @@ public class ShowTimeZoneActivity extends Activity {
 	    // Set the activity_main layout
 	    setContentView(R.layout.activity_show_time_zone);
 	    Date date = new Date();
-	    DateFormat df = new SimpleDateFormat("hh:mm:ss a Z");
+	    DateFormat df = new SimpleDateFormat("hh:mm:ss a");
+	    SimpleDateFormat sdf = new SimpleDateFormat("ZZZZ");
 	    df.setTimeZone(TimeZone.getTimeZone(itemValue));
 	    	    
 	    List<RowItem> rowItems;
 	    rowItems = new ArrayList<RowItem>();
 	    for (int i = 0; i < timeZoneList.size(); i++) {
 	    	String timeZone = timeZoneList.get(i);
-	    	String ee = TimeZone.getTimeZone(timeZone).getDisplayName();
-		    df.setTimeZone(TimeZone.getTimeZone(itemValue));
-	    	String ff =  df.format(date);
-	    	RowItem item = new RowItem(timeZone, ee, ff);
+	    	String timeZoneName = TimeZone.getTimeZone(timeZone).getDisplayName();
+		    df.setTimeZone(TimeZone.getTimeZone(timeZone));
+		    sdf.setTimeZone(TimeZone.getTimeZone(timeZone));
+	    	String currentTime =  df.format(date);
+	    	String abbrevTimeZone = sdf.format(date);
+	    	RowItem item = new RowItem(currentTime, timeZone, timeZoneName, "GMT"+abbrevTimeZone);
 	    	rowItems.add(item);
 	    }
 	    

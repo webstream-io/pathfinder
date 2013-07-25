@@ -4,11 +4,13 @@ public class RowItem {
 	private String place1;
 	private String place2;
 	private String place3;
+	private String place4;
 	
-	public RowItem(String place1, String place2, String place3) {
+	public RowItem(String place1, String place2, String place3, String place4) {
 		this.place1 = place1;
 		this.place2 = place2;
 		this.place3 = place3;
+		this.place4 = place4;
 	}
 	public String getPlace1() {
 		return place1;
@@ -27,5 +29,11 @@ public class RowItem {
 	}
 	public void setPlace3(String place3) {
 		this.place3 = place3;
+	}
+	public String getPlace4() {
+		return place4;
+	}
+	public void setPlace4(String place4) {
+		this.place4 = place4;
 	}
 }

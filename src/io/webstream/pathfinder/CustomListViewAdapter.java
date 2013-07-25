@@ -21,6 +21,7 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem>{
 		TextView txtp1;
 		TextView txtp2;
 		TextView txtp3;
+		TextView txtp4;
 	}
 	
 	public View getView(int position, View v, ViewGroup parent) {
@@ -31,9 +32,10 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem>{
 		if(v == null) {
 			v = inflater.inflate(R.layout.list_item, null);
 			holder = new ViewHolder();
-			holder.txtp1 = (TextView) v.findViewById(R.id.loc1);
-			holder.txtp2 = (TextView) v.findViewById(R.id.loc2);
-			holder.txtp3 = (TextView) v.findViewById(R.id.loc3);
+			holder.txtp1 = (TextView) v.findViewById(R.id.current_time);
+			holder.txtp2 = (TextView) v.findViewById(R.id.city);
+			holder.txtp3 = (TextView) v.findViewById(R.id.time_zone);
+			holder.txtp4 = (TextView) v.findViewById(R.id.short_time_zone);
 			v.setTag(holder);
 		} 
 		else
@@ -41,6 +43,7 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem>{
 			holder.txtp1.setText(rowItem.getPlace1());
 			holder.txtp2.setText(rowItem.getPlace2());
 			holder.txtp3.setText(rowItem.getPlace3());
+			holder.txtp4.setText(rowItem.getPlace4());
 			
 			return v;
 	}

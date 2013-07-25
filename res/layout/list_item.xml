@@ -4,32 +4,39 @@
     android:layout_height="match_parent" >
     
     <TextView
-        android:id="@+id/loc1"
+        android:id="@+id/current_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="11dp"
-        android:paddingBottom="11dp"
         android:paddingLeft="10dp"
-        android:textSize="22sp" />
+        android:paddingTop="8dp"
+        android:textSize="26sp" />
 
     <TextView
-        android:id="@+id/loc2"
+        android:id="@+id/city"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/loc1"
-        android:paddingLeft="10dp"
-        android:paddingBottom="11dp"
-        android:textColor="#8D8D8D"
-        android:textSize="17sp" />
+     	android:layout_alignParentRight="true"
+     	android:paddingTop="8dp"              
+        android:textSize="26sp" />
 
     <TextView
-        android:id="@+id/loc3"
+        android:id="@+id/time_zone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-  		android:layout_alignParentRight="true"
-  		android:paddingLeft="30dp"
-        android:paddingTop="11dp"
-        android:paddingBottom="11dp"
-        android:textSize="22sp" />
+  		android:layout_below="@+id/current_time"
+  		android:paddingLeft="10dp"
+        android:paddingBottom="7dp"
+        android:textSize="18sp"
+        android:textColor="#8D8D8D" />
+    
+    <TextView 
+        android:id="@+id/short_time_zone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/city"
+        android:textSize="18sp" 
+        android:paddingBottom="7dp" 
+        android:textColor="#8D8D8D" />
         
 </RelativeLayout>
