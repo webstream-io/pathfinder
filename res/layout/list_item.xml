@@ -7,8 +7,10 @@
         android:id="@+id/loc1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="10dp"
-        android:textSize="16sp" />
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:paddingLeft="10dp"
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/loc2"
@@ -16,15 +18,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/loc1"
         android:paddingLeft="10dp"
-        android:textColor="#3399FF"
-        android:textSize="12sp" />
+        android:paddingBottom="11dp"
+        android:textColor="#8D8D8D"
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/loc3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
   		android:layout_alignParentRight="true"
-        android:paddingBottom="10dp"
-        android:textSize="16sp" />
+  		android:paddingLeft="30dp"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:textSize="22sp" />
         
 </RelativeLayout>

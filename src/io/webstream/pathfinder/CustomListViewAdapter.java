@@ -35,7 +35,8 @@ public class CustomListViewAdapter extends ArrayAdapter<RowItem>{
 			holder.txtp2 = (TextView) v.findViewById(R.id.loc2);
 			holder.txtp3 = (TextView) v.findViewById(R.id.loc3);
 			v.setTag(holder);
-		} else
+		} 
+		else
 			holder = (ViewHolder) v.getTag();
 			holder.txtp1.setText(rowItem.getPlace1());
 			holder.txtp2.setText(rowItem.getPlace2());

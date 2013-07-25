@@ -12,7 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class DisplayTimezoneActivity extends Activity {
-	public final static String EXTRA_MESSAGE = "io.webstream.pathfinder.MESSAGE";
+	public final static String SELECTED_TIME_ZONE = "io.webstream.pathfinder.selectedTimeZone";
 	ListView lv;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class DisplayTimezoneActivity extends Activity {
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id){ 				
 				Intent intent = new Intent(v.getContext(), ShowTimeZoneActivity.class);
 				String  itemValue  = (String) lv.getItemAtPosition(position);
-				intent.putExtra(EXTRA_MESSAGE, itemValue);
+				intent.putExtra(SELECTED_TIME_ZONE, itemValue);
 				startActivity(intent);
 			}
 		});
