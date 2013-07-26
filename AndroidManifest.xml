@@ -24,13 +24,15 @@
         
         <activity
             android:name="io.webstream.pathfinder.DisplayTimezoneActivity"
-            android:label="@string/title_activity_display_timezone" >
+            android:label="@string/title_activity_display_timezone"
+            android:windowSoftInputMode="stateHidden" >
         </activity>
         
         <activity
             android:name="io.webstream.pathfinder.ShowTimeZoneActivity"
             android:label="@string/title_activity_show_time_zone" >
         </activity>
+        
         
     </application>
 

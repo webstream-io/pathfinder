@@ -8,5 +8,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_display_timezone">Time zone list</string>
     <string name="title_activity_show_time_zone">Time zone information</string>
+    <string name="search_hint">Search time zone</string>
 
 </resources>
