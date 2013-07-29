@@ -37,23 +37,24 @@ public class DisplayTimezoneActivity extends Activity {
 			
 			@Override
 			public void onTextChanged(CharSequence s, int start, int before, int count) {
-				// When user changed the text
+				// When user changed the text				
 				DisplayTimezoneActivity.this.adapter.getFilter().filter(s);
 			}
 			
 			@Override
 			public void beforeTextChanged(CharSequence s, int start, int count,
 					int after) {
-				// TODO Auto-generated method stub
+				// Auto-generated method stub
 				
 			}
 			
 			@Override
 			public void afterTextChanged(Editable s) {
-				// TODO Auto-generated method stub
+				// Auto-generated method stub
 				
 			}
 		});
+		
 		// ListView Item Click Listener
 		lv.setOnItemClickListener(new OnItemClickListener() {
 			
@@ -66,8 +67,6 @@ public class DisplayTimezoneActivity extends Activity {
 			}
 		});
 	}
-	
-	
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
