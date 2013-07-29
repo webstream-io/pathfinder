@@ -32,7 +32,7 @@ public class ShowTimeZoneActivity extends Activity {
 	    // Set the activity_main layout
 	    setContentView(R.layout.activity_show_time_zone);
 	    Date date = new Date();
-	    DateFormat df = new SimpleDateFormat("hh:mm:ss a");
+	    DateFormat df = new SimpleDateFormat("hh:mm a");
 	    SimpleDateFormat sdf = new SimpleDateFormat("ZZZZ");
 	    df.setTimeZone(TimeZone.getTimeZone(itemValue));
 	    	    
@@ -53,6 +53,7 @@ public class ShowTimeZoneActivity extends Activity {
 	    CustomListViewAdapter adapter = new CustomListViewAdapter(this, R.layout.list_item, rowItems);
 	    lv.setAdapter(adapter);
 	}
+
 	
     /* when the user clicks the Time zone button */
     public void selectTimeZone(View view) {
