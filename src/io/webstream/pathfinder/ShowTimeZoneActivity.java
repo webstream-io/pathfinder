@@ -12,12 +12,14 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
 
 public class ShowTimeZoneActivity extends Activity {
 	
 	static List<String> timeZoneList = new ArrayList<String>();
-	
+	ListView lv;
 	@SuppressLint("SimpleDateFormat")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +51,20 @@ public class ShowTimeZoneActivity extends Activity {
 	    	rowItems.add(item);
 	    }
 	    
-	    ListView lv = (ListView) findViewById(R.id.show_tz);
+	    lv = (ListView) findViewById(R.id.show_tz);
 	    CustomListViewAdapter adapter = new CustomListViewAdapter(this, R.layout.list_item, rowItems);
 	    lv.setAdapter(adapter);
+	    
+	    lv.setOnItemLongClickListener(new OnItemLongClickListener() {
+	    	
+			@Override
+			public boolean onItemLongClick(AdapterView<?> parent, View v, int position, long arg3) {
+				// Auto-generated method stub
+				lv.removeViewAt(position);
+				
+				return false;
+			}
+		});
 	}
 
 	
