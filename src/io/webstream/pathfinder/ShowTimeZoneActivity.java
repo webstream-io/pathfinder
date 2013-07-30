@@ -20,6 +20,7 @@ public class ShowTimeZoneActivity extends Activity {
 	
 	static List<String> timeZoneList = new ArrayList<String>();
 	ListView lv;
+
 	@SuppressLint("SimpleDateFormat")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,19 +28,24 @@ public class ShowTimeZoneActivity extends Activity {
 		
 		// Get the message from the intent
 	    Intent intent = getIntent();
-	    String itemValue = intent.getStringExtra(DisplayTimezoneActivity.SELECTED_TIME_ZONE);
+	    String itemValue = intent.getStringExtra(DisplayTimezoneActivity.SELECTED_TIME_ZONE);   
 	    
-		timeZoneList.add(itemValue);
+	    timeZoneList.add(itemValue);
 
 	    // Set the activity_main layout
 	    setContentView(R.layout.activity_show_time_zone);
 	    Date date = new Date();
 	    DateFormat df = new SimpleDateFormat("hh:mm a");
 	    SimpleDateFormat sdf = new SimpleDateFormat("ZZZZ");
-	    df.setTimeZone(TimeZone.getTimeZone(itemValue));
 	    	    
 	    List<RowItem> rowItems;
 	    rowItems = new ArrayList<RowItem>();
+	    
+	    // First row entry
+	    String curr = TimeZone.getDefault().getID().toString();
+	    RowItem item1 = new RowItem(df.format(date), curr, TimeZone.getDefault().getDisplayName(), "GMT"+sdf.format(date));
+	    rowItems.add(item1);
+	    
 	    for (int i = 0; i < timeZoneList.size(); i++) {
 	    	String timeZone = timeZoneList.get(i);
 	    	String timeZoneName = TimeZone.getTimeZone(timeZone).getDisplayName();
@@ -50,20 +56,22 @@ public class ShowTimeZoneActivity extends Activity {
 	    	RowItem item = new RowItem(currentTime, timeZone, timeZoneName, "GMT"+abbrevTimeZone);
 	    	rowItems.add(item);
 	    }
-	    
-	    lv = (ListView) findViewById(R.id.show_tz);
+
+	    final ListView lv = (ListView) findViewById(R.id.show_tz);
+
 	    CustomListViewAdapter adapter = new CustomListViewAdapter(this, R.layout.list_item, rowItems);
 	    lv.setAdapter(adapter);
 	    
 	    lv.setOnItemLongClickListener(new OnItemLongClickListener() {
-	    	
-			@Override
+
+	    	@Override
 			public boolean onItemLongClick(AdapterView<?> parent, View v, int position, long arg3) {
 				// Auto-generated method stub
 				lv.removeViewAt(position);
 				
 				return false;
 			}
+
 		});
 	}
 

@@ -9,6 +9,13 @@
         android:layout_height="wrap_content"
         android:text="@string/get_TimeZone" 
         android:onClick="selectTimeZone" />   
+        
+    
+    <ListView
+        android:id="@+id/show_curr_tz"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
 
 		
 </LinearLayout>
