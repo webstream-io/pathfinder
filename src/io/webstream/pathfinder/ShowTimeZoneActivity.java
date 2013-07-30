@@ -9,11 +9,13 @@ import java.util.TimeZone;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemLongClickListener;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 public class ShowTimeZoneActivity extends Activity {
@@ -38,13 +40,13 @@ public class ShowTimeZoneActivity extends Activity {
 	    DateFormat df = new SimpleDateFormat("hh:mm a");
 	    SimpleDateFormat sdf = new SimpleDateFormat("ZZZZ");
 	    	    
-	    List<RowItem> rowItems;
+	    final List<RowItem> rowItems;
 	    rowItems = new ArrayList<RowItem>();
 	    
 	    // First row entry
 	    String curr = TimeZone.getDefault().getID().toString();
-	    RowItem item1 = new RowItem(df.format(date), curr, TimeZone.getDefault().getDisplayName(), "GMT"+sdf.format(date));
-	    rowItems.add(item1);
+	    RowItem firstRowItem = new RowItem(df.format(date), curr, TimeZone.getDefault().getDisplayName(), "GMT"+sdf.format(date));
+	    rowItems.add(firstRowItem);
 	    
 	    for (int i = 0; i < timeZoneList.size(); i++) {
 	    	String timeZone = timeZoneList.get(i);
@@ -59,20 +61,26 @@ public class ShowTimeZoneActivity extends Activity {
 
 	    final ListView lv = (ListView) findViewById(R.id.show_tz);
 
-	    CustomListViewAdapter adapter = new CustomListViewAdapter(this, R.layout.list_item, rowItems);
+	    final CustomListViewAdapter adapter = new CustomListViewAdapter(this, R.layout.list_item, rowItems);
 	    lv.setAdapter(adapter);
 	    
-	    lv.setOnItemLongClickListener(new OnItemLongClickListener() {
-
-	    	@Override
-			public boolean onItemLongClick(AdapterView<?> parent, View v, int position, long arg3) {
+	    lv.setOnItemClickListener(new OnItemClickListener() {
+	       
+			public void onItemClick(AdapterView<?> a, View v, int position, long id) {
 				// Auto-generated method stub
-				lv.removeViewAt(position);
-				
-				return false;
+				AlertDialog.Builder adb=new AlertDialog.Builder(ShowTimeZoneActivity.this);
+	            adb.setTitle("Remove?");
+	            adb.setMessage("Are you sure you want to remove " + position);
+	            final int positionToRemove = position;
+	            adb.setNegativeButton("Cancel", null);
+	            adb.setPositiveButton("Remove", new AlertDialog.OnClickListener() {
+	                public void onClick(DialogInterface dialog, int which) {
+	                    rowItems.remove(positionToRemove);
+	                    adapter.notifyDataSetChanged();
+	                }});
+	            adb.show();
 			}
-
-		});
+	        });
 	}
 
 	
